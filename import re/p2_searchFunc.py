@@ -1,0 +1,18 @@
+import re
+str = "How are you, How is everithing, how do you do"
+matches = re.search("How", str)
+print("Type of Matches: ",type(matches))
+print("Maches: ",matches)
+print("span: ",matches.span())
+print("Group: ",matches.group())
+print("String: ",matches.string)
+print("End: ",matches.end())
+print("Start: ",matches.start())
+print("Expand:",matches.expand("do you know what's happen"))
+print("String: ",matches.string)
+print("GroupDict: ",matches.groupdict("do"))
+print("Sizeof: ",matches.__sizeof__())
+print("Lastindex: ",matches.lastindex)
+print("Endpos: ",matches.endpos)
+print("Pos: ",matches.pos)
+print("SubclassHook: ",matches.__subclasshook__())
